@@ -1,0 +1,77 @@
+body{
+    background-image: url(uj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    background-position: center
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1{
+font-size: 4em;
+color: red;
+background-color: rgba(251, 248, 249, 0.9);
+padding: 20px;
+border: 3px solid black;
+font-family: 'Sorts Mill Goudy', serif;
+border-radius: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.jubilee{
+    background-color: rgba(251, 248, 249, 0.82); 
+    height: 300px;
+    width: 200px;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 10px;}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 3em;
+    color: red;
+}
+.days, .hours, .minutes, .seconds{
+    color: red;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 4em;
+}
+.red{
+    font-size: 3em;
+    border: none;
+    font-family: 'Sorts Mill Goudy', serif;
+    color: red;
+}
+button{
+    margin-left: 100px;
+    border: none;
+}
+@media all and (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+    .days, .hours, .minutes, .seconds, h1, h3{
+        font-size: 2em;
+    }
+}
+
+@media all and (max-width: 500px){
+    .container{
+        flex-direction: column;
+    }
+    .days, .hours, .minutes, .seconds, h1, h3{
+        font-size: 2em;
+}
+}
